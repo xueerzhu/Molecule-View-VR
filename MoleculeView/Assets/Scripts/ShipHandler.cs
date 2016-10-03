@@ -8,6 +8,8 @@ public class ShipHandler : MonoBehaviour {
 
     public bool powered = true;
     public float speed = 10;
+
+	[RequireComponent]
     Rigidbody rb;
 
     void start()

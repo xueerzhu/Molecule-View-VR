@@ -20,18 +20,19 @@ public class PlayerInput : MonoBehaviour {
         Debug.Log(h2);
         bool up = OVRInput.Get(OVRInput.Button.DpadUp);
         bool down = OVRInput.Get(OVRInput.Button.DpadDown);
-        float z;
-        float rz;
+        float y;
+        float ry;
         if (up)
         {
-            z = 1;
-        } else if (down)
+			y = 1;
+        } 
+		else if (down)
         {
-            z = -1;
+            y= -1;
         }
         else
         {
-            z = 0;
+            y = 0;
         }
 
         bool rl = OVRInput.Get(OVRInput.Button.DpadLeft);
@@ -39,22 +40,22 @@ public class PlayerInput : MonoBehaviour {
         float power = OVRInput.Get(OVRInput.Axis1D.SecondaryIndexTrigger);
         if (rr)
         {
-            rz = 1;
+            ry = 1;
         }
         else if (rl)
         {
-            rz = -1;
+            ry = -1;
         }
         else
         {
-            rz = 0;
+            ry = 0;
         }
 
         // regulate input to vector forces
         Vector2 rh2 = OVRInput.Get(OVRInput.Axis2D.SecondaryThumbstick);
 
-        moveInput = new Vector3(h2.x, h2.y, z);
-        rotInput = new Vector3(rh2.x, rh2.y, rz);
+        moveInput = new Vector3(h2.x, h2.y, y);
+        rotInput = new Vector3(rh2.x, rh2.y, ry);
         if (power > 0.5)
         {
             powered = true;
