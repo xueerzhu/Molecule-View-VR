@@ -32,6 +32,7 @@ namespace VRStandardAssets.Menu
         {
             // Set the target position based on whether the item is being looked at or not.
             m_TargetPosition = m_Item.IsOver ? m_PoppedPosition : m_StartPosition;
+            //debug
 
             // Move towards the target position.
             m_Transform.position = Vector3.MoveTowards(m_Transform.position, m_TargetPosition, m_PopSpeed * Time.deltaTime);
