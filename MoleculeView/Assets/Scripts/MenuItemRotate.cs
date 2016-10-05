@@ -12,9 +12,9 @@ namespace VRStandardAssets.Menu
         [SerializeField]
         private VRInteractiveItem m_Item;      // The VRInteractiveItem of whatever should rotate.
         [SerializeField]
-        private float m_RotSpeed = 5f;         // The speed at which the item should rotate.
+        private float m_RotSpeed = 20f;         // The speed at which the item should rotate.
         [SerializeField]
-        private float m_RotAmount = 40f;    // The distance the item should rotate.
+        private float m_RotAmount = 150f;    // The distance the item should rotate.
         
 
 
