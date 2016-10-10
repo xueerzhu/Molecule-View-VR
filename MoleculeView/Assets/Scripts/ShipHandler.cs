@@ -6,7 +6,7 @@ public class ShipHandler : MonoBehaviour {
     public Vector3 posInput;
     public Vector3 rotInput;
 
-    public float speed = 10;
+    public float speed = 50;
 
 	//[RequireComponent]
     public Rigidbody rb;
