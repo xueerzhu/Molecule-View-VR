@@ -6,53 +6,33 @@ public class ShipHandler : MonoBehaviour {
     public Vector3 posInput;
     public Vector3 rotInput;
 
-    public bool powered = true;
     public float speed = 10;
 
 	//[RequireComponent]
-    Rigidbody rb;
+    public Rigidbody rb;
+
+    float z;
 
     void start()
     {
         rb = gameObject.GetComponent<Rigidbody>();
+        Debug.Log(rb);
+        z = gameObject.transform.rotation.eulerAngles.z;
+
 
     }
 
-   // Rigidbody rb = new GameObject.getcomponent<Rigidbody>();
+    // Rigidbody rb = new GameObject.getcomponent<Rigidbody>();
 
-    public void MoveInput (Vector3 move, Vector3 rote, bool power)
+    public void MoveInput (Vector3 movement, Vector3 rotation)
     {
-        posInput = move;
-        rotInput = rote;
-        powered = power;
+        posInput = movement;
+        rotInput = rotation;
 
-        ActuallyMove();
-    }
-
-    void ActuallyMove()
-    {
-        Debug.Log("AM was run");
-
-        if (rb)
-        {
-            Debug.Log("Rigidbody exists");
-        }
-        else
-        {
-            Debug.Log("No rigidbody!");
-        }
-
-
-        if (powered)
-        {
-            speed = 150;
-        }
-        else
-        {
-            speed = 0;
-        }
-
-        rb.AddRelativeForce(posInput * speed);
+        rb.AddForce(posInput * speed);
         rb.AddRelativeTorque(rotInput);
+        z = 0;
+      
     }
+
 }
