@@ -7,8 +7,10 @@ public class ShipHandler : MonoBehaviour {
     public Vector3 rotInput;
 
     public float speed = 50;
+    public float rotspeed = 50;
 
-	//[RequireComponent]
+
+    //[RequireComponent]
     public Rigidbody rb;
 
     float z;
@@ -30,7 +32,7 @@ public class ShipHandler : MonoBehaviour {
         rotInput = rotation;
 
         rb.AddForce(posInput * speed);
-        rb.AddRelativeTorque(rotInput);
+        rb.AddRelativeTorque(rotInput * rotspeed);
         z = 0;
       
     }
