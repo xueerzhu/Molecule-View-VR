@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using VRStandardAssets.Utils;
+using UnityEngine.SceneManagement;
+
 
 namespace VRStandardAssets.Menu
 {
@@ -47,9 +49,11 @@ namespace VRStandardAssets.Menu
 
 
             //debug
-            if (m_Item.IsOver)
+            if (m_Item.IsOver && Input.GetButtonUp("Fire1"))
             {
                 Debug.Log("is over lol");
+                SceneManager.LoadScene(3);
+                //SceneManage.currentScene++;
             }
             
         }

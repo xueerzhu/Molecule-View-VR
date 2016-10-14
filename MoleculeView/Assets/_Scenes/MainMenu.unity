@@ -413,6 +413,10 @@ Prefab:
       propertyPath: m_ShowSingleTapWarnings
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 172770, guid: ad9d8e2e1e1e6774bab6f142ed0c6f51, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad9d8e2e1e1e6774bab6f142ed0c6f51, type: 2}
   m_IsPrefabParent: 0
@@ -2224,7 +2228,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 1.7}
+  m_AnchoredPosition: {x: 0, y: 1.2}
   m_SizeDelta: {x: 250, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &804976014
@@ -3160,7 +3164,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1221184746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3730,7 +3734,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 18}
+  m_AnchoredPosition: {x: 0, y: 28.7}
   m_SizeDelta: {x: 58, y: 18}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1889369794
@@ -3766,9 +3770,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Loot at the model and press A*
+  m_Text: 'Look at the model,
 
-    to enter the room.'
+    Press A* on controller to enter the room.'
 --- !u!222 &1889369795
 CanvasRenderer:
   m_ObjectHideFlags: 0
