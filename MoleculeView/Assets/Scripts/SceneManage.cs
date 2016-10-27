@@ -13,16 +13,24 @@ public class SceneManage : MonoBehaviour {
         Debug.Log("current is " + currentScene);
 
 
-        if (Input.GetKey("d"))
+        if (Input.GetButtonDown("Next"))
         {
             currentScene++;
             SceneManager.LoadScene(currentScene);
         } 
 
-        if (Input.GetKey("a"))
+        if (Input.GetButtonDown("Previous") )
         {
+            //Debug.Log("Left Trigger button is down");
             currentScene--;
             SceneManager.LoadScene(currentScene);
+        }
+        if (Input.GetButtonDown("Fire2"))
+        {
+            //Debug.Log("Fire2 button is down");
+            currentScene = 2;
+            SceneManager.LoadScene(currentScene);
+
         }
 
 

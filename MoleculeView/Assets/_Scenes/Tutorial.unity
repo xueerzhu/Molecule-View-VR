@@ -3226,11 +3226,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '<b>PRESS Esc*</b> to go back to MAIN MENU
-
-    <b>A*</b>: previous scene
-
-    <b>D*</b>: next scene <b> Try this!</b>'
+  m_Text: "<b>PRESS B*</b> to go back to MAIN MENU\n<b>Left/Right Trigger Button</b>:
+    previous/next scene \n"
 --- !u!222 &2033063990
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -719,7 +719,6 @@ Transform:
   m_Children:
   - {fileID: 214674901}
   - {fileID: 1332415110}
-  - {fileID: 1216884554}
   m_Father: {fileID: 1889665964}
   m_RootOrder: 0
 --- !u!1 &727981603
@@ -1239,7 +1238,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: <b>PDB & Molecule VR</b>
 --- !u!222 &1213957175
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1247,74 +1246,6 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1213957172}
---- !u!1 &1216884553
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100006, guid: 824787d03aeb851489b54767e86b55d2, type: 3}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1216884554}
-  - 33: {fileID: 1216884556}
-  - 23: {fileID: 1216884555}
-  m_Layer: 0
-  m_Name: Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1216884554
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400006, guid: 824787d03aeb851489b54767e86b55d2, type: 3}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1216884553}
-  m_LocalRotation: {x: -0.00000003774895, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.0001534, y: 0.56461495, z: 0.4046186}
-  m_LocalScale: {x: 100, y: 100, z: 100}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children: []
-  m_Father: {fileID: 634177010}
-  m_RootOrder: 2
---- !u!23 &1216884555
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2300002, guid: 824787d03aeb851489b54767e86b55d2,
-    type: 3}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1216884553}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 2100000, guid: b3cd6c3e7eddd624eb8ae040e64b6efd, type: 2}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_SelectedWireframeHidden: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
---- !u!33 &1216884556
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 3300002, guid: 824787d03aeb851489b54767e86b55d2,
-    type: 3}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1216884553}
-  m_Mesh: {fileID: 4300002, guid: 824787d03aeb851489b54767e86b55d2, type: 3}
 --- !u!1 &1246514550
 GameObject:
   m_ObjectHideFlags: 0
@@ -1779,8 +1710,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "<b>View</b> Protein Database models in VR. \n<b>Examine</b> the model by
-    flying through the molecules."
+  m_Text: "<b>View</b> models in VR. \n<b>Fly through</b> the model to examine."
 --- !u!222 &1910871151
 CanvasRenderer:
   m_ObjectHideFlags: 0

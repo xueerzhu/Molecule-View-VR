@@ -52,7 +52,7 @@ namespace VRStandardAssets.Menu
             if (m_Item.IsOver && Input.GetButtonUp("Fire1"))
             {
                 Debug.Log("is over lol");
-                SceneManager.LoadScene(3);
+                SceneManager.LoadScene(gameObject.name);
                 //SceneManage.currentScene++;
             }
             

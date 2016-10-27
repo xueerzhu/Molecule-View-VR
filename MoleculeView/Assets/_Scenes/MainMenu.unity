@@ -1449,7 +1449,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 266b0b898b3c0774a8161386ffad60ad, type: 3}
       propertyPath: m_Name
-      value: C6H6
+      value: benzene
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 266b0b898b3c0774a8161386ffad60ad, type: 3}
@@ -2034,7 +2034,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100022, guid: 8fc805f60d7b0e3438335d2133c855d7, type: 3}
       propertyPath: m_Name
-      value: H2O
+      value: water
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8fc805f60d7b0e3438335d2133c855d7, type: 3}
@@ -3772,7 +3772,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Look at the model,
 
-    Press A* on controller to enter the room.'
+    while pressing A* on controller to enter.'
 --- !u!222 &1889369795
 CanvasRenderer:
   m_ObjectHideFlags: 0
