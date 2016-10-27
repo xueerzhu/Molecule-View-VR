@@ -1,12 +1,14 @@
-# MoleculeView-Oculus
+# PDB, Molecule View for Oculus
 
-## Develop Process Record  (All the lengthy stuff you don't wanna google again)
+## using Jmol and Blender imported PDB models;
+Under development, exe not ready yet.
+Feel free to download the project and run in Unity. It is a runnable and playable application. Waiting to be advised and improved upon.
 
-Jmol: create molecule and protein modles in jmol
-      console log: Write name.obj
-      Drag weird file to Unity first, then the obj file -> generate model with etc information
-
-Blender:  add-on -> enabel import from PDB -> import and export to fbx file
+Require: Gamepad -> Joystick for six degree of freedom flying
+                 -> left/right trigger buttons for selecting previous/next scene
+                 -> 'A' for selecting, 'B' for going back to the main model menu
+                 
+In this project, you will temprarily find OVR sample projects. They were great resources for me to learn Oculus game handling and management. My project is built on top of the OVR library VRInteractiveItem.cs and such code. More to be doced.
 
 
       
